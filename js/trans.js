@@ -1,4 +1,14 @@
-const currentLang = JSON.parse(localStorage.getItem("yt-widget")).lang
+let currentLang = ""
+
+if (localStorage.getItem("yt-widget") === null) {
+    localStorage.setItem('yt-widget', JSON.stringify({
+        "lang": "en",
+        "active": true
+    })
+    )
+}
+
+currentLang = JSON.parse(localStorage.getItem("yt-widget")).lang
 
 function LangTrans() {
     const [toggle, setToggle] = React.useState(false)
