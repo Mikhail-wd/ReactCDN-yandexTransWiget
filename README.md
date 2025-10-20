@@ -1,1 +1,1 @@
-React CDN + yandex translate widget
+React CDN + yandex translate widget.
